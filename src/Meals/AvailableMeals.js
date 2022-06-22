@@ -1,5 +1,5 @@
 import classes from './AvailableMeals.module.css';
-import MealItem from './MealItem';
+import MealItem from './MealItem/MealItem';
 import Card from '../UI/Card';
 
 const DUMMY_MEALS = [
@@ -34,7 +34,7 @@ const AvailableMeals = () => {
     <MealItem
       key={meal.id}
       name={meal.name}
-      desription={meal.description}
+      description={meal.description}
       price={meal.price}
     />
   ));
